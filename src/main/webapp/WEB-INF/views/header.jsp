@@ -36,5 +36,5 @@
 <script>
 	$('.home').click(function(){location.href='/gwland'})
 	$('#listPlace').click(function(){location.href='/gwland/pce/listPlace'})
-	$('#bbs').click(function(){location.href=`${ctx}/move/bbs/index`})
+	$('#bbs').click(function(){location.href=`${ctx}/bbs/index`})
 </script>

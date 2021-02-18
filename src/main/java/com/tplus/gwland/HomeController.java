@@ -24,9 +24,8 @@ public class HomeController {
 		session.setAttribute("bbs", ctx+"/resources/bbs");
 		return "public";
 	}
-	@GetMapping("/move/{dir}/{page}")
-	public String move(@PathVariable String dir, @PathVariable String page) {
-		logger.info("이동 파일: "+page);
-		return String.format("%s/%s", dir, page);
+	@GetMapping("/{dir}/{page}")
+	public String move(@PathVariable String dir,@PathVariable String page) {
+		return dir+":"+page;
 	}
 }

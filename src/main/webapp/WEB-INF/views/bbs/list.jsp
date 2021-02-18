@@ -18,7 +18,7 @@
 </head>
 <body>
 <div class="w3-container">
-  <h4 class="main"><a href="#" id="home">main</a></h4>
+  <h4 class="main"><a href="#" id="home">리뷰 메인</a></h4>
   <h2>방문자 리뷰</h2>
   <h4><a href="#" id="write">리뷰쓰기</a></h4>
   <table id="bdlist" class="w3-table w3-striped w3-border">
@@ -34,8 +34,8 @@
 </div>
 <script src="${bbs}/js/bbs.js"></script>
 <script>
-$('#home').click(function(e){location.href = `${ctx}`})
-$('#write').click(function(e){location.href = `${ctx}/move/bbs/write`})
+$('#home').click(function(e){location.href = `${ctx}/bbs/index`})
+$('#write').click(function(e){location.href = `${ctx}/bbs/write`})
 bbs.list({ctx: `${ctx}`})
 
 

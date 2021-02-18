@@ -16,7 +16,7 @@
 </head>
 <body>
 	<div class="container">
-	<h4 class="main"><a href="#" id="home">main</a></h4>
+	<h4 class="main"><a href="#" id="home">리뷰 메인</a></h4>
 		<h1>리뷰쓰기</h1>
 		<form>
 			<div>
@@ -35,9 +35,9 @@
 	</div>
 	<script src="${bbs}/js/bbs.js"></script>
 	<script>
-		$('#home').click(function(e){location.href = `${ctx}`})
+		$('#home').click(function(e){location.href = `${ctx}/bbs/index`})
 		$('#write-btn').click(function() {bbs.write(`${ctx}`)})
-		$('#cancel-btn').click(function() {location.href = `${ctx}/move/bbs/list`})
+		$('#cancel-btn').click(function() {location.href = `${ctx}/bbs/list`})
 	</script>
 </body>
 </html>

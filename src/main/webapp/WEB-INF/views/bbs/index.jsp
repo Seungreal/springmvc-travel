@@ -26,8 +26,8 @@
   </ul>
 </div>
 <script>
-	$('#write').click(function(){location.href = `${ctx}/move/bbs/write`})
-	$('#list').click(function(){location.href = `${ctx}/move/bbs/list`})
+	$('#write').click(function(){location.href = `${ctx}/bbs/write`})
+	$('#list').click(function(){location.href = `${ctx}/bbs/list`})
 </script>
 </body>
 </html>

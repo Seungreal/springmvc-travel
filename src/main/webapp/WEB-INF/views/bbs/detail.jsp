@@ -18,7 +18,7 @@
 </head>
 <body>
 <div class="w3-container">
-  <h4 class="main"><a href="#" id="home">main</a></h4>
+  <h4 class="main"><a href="#" id="home">리뷰 메인</a></h4>
   <h2>리뷰 보기</h2>
   <a href="#" id="list">리뷰목록</a>
   <table id="bddetail" class="w3-table w3-striped w3-border">
@@ -37,8 +37,8 @@
 </div>
 <script src="${bbs}/js/bbs.js"></script>
 <script>
-$('#home').click(function(e){location.href = `${ctx}`})
-$('#list').click(function(e){location.href = `${ctx}/move/bbs/list`})
+$('#home').click(function(e){location.href = `${ctx}/bbs/index`})
+$('#list').click(function(e){location.href = `${ctx}/bbs/list`})
 bbs.detail(`${ctx}`)
 </script>
 </body>

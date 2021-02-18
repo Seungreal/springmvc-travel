@@ -11,11 +11,11 @@ bbs.write = x => {
 		dataTye: 'json',
 		contentType: 'application/json',
 		success: d => {
-			location.href = `/gwland/move/bbs/list`	
+			location.href = `/gwland/bbs/list`	
 		},
 		error: e => {
 			alert(`글쓰기 에러: ${e}`)
-			location.href = `/gwland/move/bbs/404`
+			location.href = `/gwland/bbs/404`
 		}
 	})
 }
@@ -34,7 +34,7 @@ bbs.list = x => {
 			$(this).click(e => {
 				e.preventDefault()
 				localStorage.setItem('bdNum', `${this.id}`)
-				location.href=`${x.ctx}/move/bbs/detail`
+				location.href=`${x.ctx}/bbs/detail`
 			})
 		})
 	})
@@ -70,7 +70,7 @@ bbs.detail = x => {
 						contentType:'application/json',
 						success: d => {
 							alert('수정완료')
-							location.href = `/gwland/move/bbs/detail`
+							location.href = `/gwland/bbs/detail`
 						},
 						error: e => {
 							alert('수정실패')
@@ -79,7 +79,7 @@ bbs.detail = x => {
 				})
 				$('#cancel').click(e =>{
 					e.preventDefault()
-					location.href = `/gwland/move/bbs/list`
+					location.href = `/gwland/bbs/list`
 				})
 			})
 		$('#delete-btn').click(e => {
@@ -94,7 +94,7 @@ bbs.detail = x => {
 				contentType: 'application/json',
 				success: d => {
 					alert('삭제완료')
-					location.href = `/gwland/move/bbs/list`
+					location.href = `/gwland/bbs/list`
 				},
 				error: e =>{
 					alert(`삭제실패: ${e}`)
